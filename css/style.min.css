@@ -145,14 +145,14 @@ body.lock {
 }
 .swiper-lazy {
   opacity: 0;
-  transition: opacity 0.4s ease 0s;
+  transition: opacity 0.3s ease 0s;
 }
 .swiper-lazy.swiper-lazy-loaded {
   opacity: 1;
 }
 img.lazy-image {
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.3s ease;
 }
 
 img.lazy-image.lazy-image--loaded {
