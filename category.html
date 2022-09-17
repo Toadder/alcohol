@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Алкоголь</title>
+  <!-- SWIPER -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20220917200020"
+  />
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css/style.min.css?_v=20220917200020" />
+</head>
+
+  <body>
+    <div class="wrapper">
+      <!-- .header -->
+<header class="header">
+  <div class="header__container">
+    <div class="header__body">
+      <a href="./index.html" class="header__logo">
+        <picture><source srcset="https://dummyimage.com/182x50.gif" data-srcset="img/logo.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/182x50.gif" data-src="img/logo.png" alt="Логотип" /></picture>
+      </a>
+      <div class="header__main">
+        <form class="header__search">
+          <input type="text" placeholder="Поиск по каталогу" />
+          <button type="submit">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.003 10.5907C12.997 9.24044 13.4442 7.56451 13.2551 5.89863C13.0659 4.23275 12.2542 2.69975 10.9828 1.6067C9.71135 0.513776 8.07384 -0.058342 6.39843 0.00470809C4.72296 0.0678771 3.13328 0.761696 1.94749 1.94728C0.761916 3.13275 0.0679828 4.72253 0.004725 6.39795C-0.0584436 8.07343 0.513671 9.71098 1.60647 10.9824C2.69939 12.2539 4.23227 13.0656 5.89837 13.2548C7.56421 13.4441 9.24022 12.997 10.5904 12.0031L13.2942 14.7067C13.4814 14.8943 13.7356 14.9999 14.0007 15C14.2658 15.0001 14.5201 14.8949 14.7075 14.7074C14.8949 14.52 15.0001 14.2657 15 14.0006C14.9998 13.7355 14.8942 13.4813 14.7066 13.2941L12.003 10.5907ZM6.65726 11.2998H6.65714C5.42593 11.2998 4.24499 10.8107 3.37445 9.94005C2.5038 9.06939 2.01471 7.88856 2.01471 6.65734C2.01471 5.42613 2.5038 4.24518 3.37445 3.37463C4.24511 2.50409 5.42593 2.01488 6.65714 2.01488C7.88835 2.01488 9.06929 2.50409 9.93983 3.37475C10.8104 4.24542 11.2996 5.42625 11.2996 6.65746C11.2981 7.88832 10.8085 9.06844 9.9382 9.93868C9.06789 10.809 7.88776 11.2986 6.65699 11.3L6.65726 11.2998Z"
+              />
+            </svg>
+          </button>
+        </form>
+        <a href="tel:+79998887766" class="header__phone phone">+7 (999) 888-77-66</a>
+        <div class="header__work">
+          <div class="header__hours">24/7</div>
+          <span
+            >Мы работаем <br />
+            круглосуточно для вас!</span
+          >
+        </div>
+      </div>
+      <a href="#cart_popup" class="header__cart cart-header popup-link">
+        <div class="cart-header__decoration">
+          <div class="cart-header__title">Корзина</div>
+          <svg
+            width="38"
+            height="33"
+            viewBox="0 0 38 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M37.0423 10.7902C36.2422 9.79152 35.042 9.23228 33.7617 9.23228H31.6415L26.6412 0.843621C26.1612 0.0447728 25.1209 -0.234992 24.3209 0.244546C23.5209 0.723812 23.2407 1.76256 23.7209 2.56141L27.6815 9.19252L10.3194 9.19224L14.28 2.56113C14.7599 1.76229 14.5199 0.723476 13.68 0.244267C12.88 -0.234999 11.8396 0.00463377 11.3597 0.843342L6.35884 9.232H4.23859C2.95829 9.232 1.75836 9.79123 0.958055 10.7899C0.158031 11.7885 -0.162079 13.067 0.07795 14.3451L3.23818 29.6044C3.63835 31.5619 5.3983 33 7.39854 33H30.6013C32.6015 33 34.3618 31.5619 34.7617 29.6044L37.9219 14.3451C38.1622 13.067 37.8424 11.7888 37.0421 10.7902L37.0423 10.7902ZM31.4417 28.8857C31.3617 29.2853 31.0017 29.5647 30.6015 29.5647H7.39874C6.99858 29.5647 6.63857 29.285 6.55849 28.8857L3.39826 13.6263C3.31817 13.2669 3.47835 13.0273 3.55816 12.9074C3.63825 12.7876 3.87823 12.5878 4.2382 12.5878H33.7617C34.1217 12.5878 34.3218 12.7876 34.4418 12.9074C34.5219 13.0273 34.6818 13.2669 34.6017 13.6263L31.4417 28.8857Z"
+              fill="white"
+            />
+            <path
+              d="M11.9593 15.5837C11.0392 15.5837 10.2791 16.3427 10.2791 17.2614V24.931C10.2791 25.8497 11.0392 26.6088 11.9593 26.6088C12.8793 26.6088 13.6395 25.8497 13.6395 24.931V17.2614C13.6794 16.3427 12.9192 15.5837 11.9593 15.5837V15.5837Z"
+              fill="white"
+            />
+            <path
+              d="M19.0001 15.5837C18.0801 15.5837 17.3199 16.3427 17.3199 17.2614V24.931C17.3199 25.8497 18.0801 26.6088 19.0001 26.6088C19.9202 26.6088 20.6803 25.8497 20.6803 24.931V17.2614C20.6803 16.3427 19.9202 15.5837 19.0001 15.5837Z"
+              fill="white"
+            />
+            <path
+              d="M26.0409 15.5837C25.1209 15.5837 24.3607 16.3427 24.3607 17.2614V24.931C24.3607 25.8497 25.1209 26.6088 26.0409 26.6088C26.961 26.6088 27.7211 25.8497 27.7211 24.931V17.2614C27.7211 16.3427 26.9612 15.5837 26.0409 15.5837Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="cart-header__info">
+          <div class="cart-header__price">123 000 руб.</div>
+          <div class="cart-header__count">999 товаров</div>
+        </div>
+      </a>
+      <div class="header__burger">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- /.header -->
+
+
+      <!-- .main -->
+      <main class="main">
+        <div class="content">
+          <div class="content__container">
+            <div class="content__body">
+              <!-- .sidebar -->
+<div class="sidebar" data-da=".header__main,991.98,first">
+  <div class="sidebar__city">
+    <svg
+      width="22"
+      height="22"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="#633389"
+    >
+      <path
+        d="M12,2a8.009,8.009,0,0,0-8,8c0,3.255,2.363,5.958,4.866,8.819,0.792,0.906,1.612,1.843,2.342,2.791a1,1,0,0,0,1.584,0c0.73-.948,1.55-1.885,2.342-2.791C17.637,15.958,20,13.255,20,10A8.009,8.009,0,0,0,12,2Zm0,11a3,3,0,1,1,3-3A3,3,0,0,1,12,13Z"
+      />
+    </svg>
+
+    <span>Санкт-Петербург</span>
+  </div>
+  <nav class="sidebar__menu">
+    <ul class="sidebar__list">
+      <li><a href="./category.html">Каталог</a></li>
+      <li><a href="./payment.html">Доставка и оплата</a></li>
+      <li><a href="./contacts.html">О компании</a></li>
+    </ul>
+  </nav>
+  <nav class="sidebar__categories categories-sidebar">
+    <a href="./category.html" class="categories-sidebar__category">
+      <div class="categories-sidebar__icon">
+        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/01.png" alt="Все товары" /></picture>
+      </div>
+      <div class="categories-sidebar__name">Все товары</div>
+    </a>
+
+    <a href="./category.html" class="categories-sidebar__category">
+      <div class="categories-sidebar__icon">
+        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/02.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/02.png" alt="Водка" /></picture>
+      </div>
+      <div class="categories-sidebar__name">Водка</div>
+    </a>
+
+    <a href="./category.html" class="categories-sidebar__category">
+      <div class="categories-sidebar__icon">
+        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/03.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/03.png" alt="Пиво" /></picture>
+      </div>
+      <div class="categories-sidebar__name">Пиво</div>
+    </a>
+
+    <a href="./category.html" class="categories-sidebar__category">
+      <div class="categories-sidebar__icon">
+        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/04.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/04.png" alt="Вино" /></picture>
+      </div>
+      <div class="categories-sidebar__name">Вино</div>
+    </a>
+
+    <a href="./category.html" class="categories-sidebar__category">
+      <div class="categories-sidebar__icon">
+        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/05.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/05.png" alt="Шампанское" /></picture>
+      </div>
+      <div class="categories-sidebar__name">Шампанское</div>
+    </a>
+
+    <a href="./category.html" class="categories-sidebar__category">
+      <div class="categories-sidebar__icon">
+        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/06.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/06.png" alt="Виски" /></picture>
+      </div>
+      <div class="categories-sidebar__name">Виски</div>
+    </a>
+
+    <a href="./category.html" class="categories-sidebar__category">
+      <div class="categories-sidebar__icon">
+        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/07.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/07.png" alt="Ром" /></picture>
+      </div>
+      <div class="categories-sidebar__name">Ром</div>
+    </a>
+
+    <a href="./category.html" class="categories-sidebar__category">
+      <div class="categories-sidebar__icon">
+        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/08.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/08.png" alt="Вермут" /></picture>
+      </div>
+      <div class="categories-sidebar__name">Вермут</div>
+    </a>
+
+    <a href="./category.html" class="categories-sidebar__category">
+      <div class="categories-sidebar__icon">
+        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/09.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/09.png" alt="Ликёр" /></picture>
+      </div>
+      <div class="categories-sidebar__name">Ликёр</div>
+    </a>
+
+    <a href="./category.html" class="categories-sidebar__category">
+      <div class="categories-sidebar__icon">
+        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/10.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/10.png" alt="Абсент" /></picture>
+      </div>
+      <div class="categories-sidebar__name">Абсент</div>
+    </a>
+
+    <a href="./category.html" class="categories-sidebar__category">
+      <div class="categories-sidebar__icon">
+        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/11.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/11.png" alt="Джин" /></picture>
+      </div>
+      <div class="categories-sidebar__name">Джин</div>
+    </a>
+
+    <a href="./category.html" class="categories-sidebar__category">
+      <div class="categories-sidebar__icon">
+        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/12.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/12.png" alt="Коньяк" /></picture>
+      </div>
+      <div class="categories-sidebar__name">Коньяк</div>
+    </a>
+
+    <a href="./category.html" class="categories-sidebar__category">
+      <div class="categories-sidebar__icon">
+        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/13.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/13.png" alt="Соки и лимонады" /></picture>
+      </div>
+      <div class="categories-sidebar__name">Соки и лимонады</div>
+    </a>
+
+    <a href="./category.html" class="categories-sidebar__category">
+      <div class="categories-sidebar__icon">
+        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/14.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/14.png" alt="Сигареты" /></picture>
+      </div>
+      <div class="categories-sidebar__name">Сигареты</div>
+    </a>
+  </nav>
+</div>
+<!-- /.sidebar -->
+
+              <div class="card">
+                <section class="category">
+                  <div class="category__body">
+                    <a href="./index.html" class="category__home home-return">
+                      <svg
+                        width="17"
+                        height="12"
+                        viewBox="0 0 17 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="black"
+                      >
+                        <path
+                          d="M0.469669 6.53033C0.176777 6.23744 0.176777 5.76256 0.469669 5.46967L5.24264 0.696699C5.53553 0.403806 6.01041 0.403806 6.3033 0.696699C6.59619 0.989593 6.59619 1.46447 6.3033 1.75736L2.06066 6L6.3033 10.2426C6.59619 10.5355 6.59619 11.0104 6.3033 11.3033C6.01041 11.5962 5.53553 11.5962 5.24264 11.3033L0.469669 6.53033ZM17 6.75H1V5.25H17V6.75Z"
+                        />
+                      </svg>
+                      <span>Главная</span>
+                    </a>
+                    <h1 class="category__title page-title">Вино</h1>
+                    <!-- .items -->
+<div class="items">
+  <article class="items__item">
+    <div class="items__sale">-10%</div>
+    <a href="./product.html" class="items__img">
+      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    </a>
+    <a href="" class="items__title">Водка царская 0.7 л</a>
+    <div class="items__price">1200 руб</div>
+    <div class="items__actions">
+      <a href="buy_popup" class="items__buy popup-link"> Купить в 1 клик </a>
+      <button class="items__add items__add_active add-to-cart" type="button">
+        <svg
+          width="18"
+          height="17"
+          viewBox="0 0 18 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="7" width="4" height="17" rx="2" fill="white" />
+          <rect
+            x="17.5"
+            y="6.5"
+            width="4"
+            height="17"
+            rx="2"
+            transform="rotate(90 17.5 6.5)"
+            fill="white"
+          />
+        </svg>
+      </button>
+    </div>
+  </article>
+
+  <article class="items__item">
+    <div class="items__sale">-10%</div>
+    <a href="./product.html" class="items__img">
+      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    </a>
+    <a href="" class="items__title">Водка царская 0.7 л</a>
+    <div class="items__price">1200 руб</div>
+    <div class="items__actions">
+      <a href="buy_popup" class="items__buy popup-link"> Купить в 1 клик </a>
+      <button class="items__add add-to-cart" type="button">
+        <svg
+          width="18"
+          height="17"
+          viewBox="0 0 18 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="7" width="4" height="17" rx="2" fill="white" />
+          <rect
+            x="17.5"
+            y="6.5"
+            width="4"
+            height="17"
+            rx="2"
+            transform="rotate(90 17.5 6.5)"
+            fill="white"
+          />
+        </svg>
+      </button>
+    </div>
+  </article>
+
+  <article class="items__item">
+    <div class="items__sale">-10%</div>
+    <a href="./product.html" class="items__img">
+      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    </a>
+    <a href="" class="items__title">Водка царская 0.7 л</a>
+    <div class="items__price">1200 руб</div>
+    <div class="items__actions">
+      <a href="buy_popup" class="items__buy popup-link"> Купить в 1 клик </a>
+      <button class="items__add add-to-cart" type="button">
+        <svg
+          width="18"
+          height="17"
+          viewBox="0 0 18 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="7" width="4" height="17" rx="2" fill="white" />
+          <rect
+            x="17.5"
+            y="6.5"
+            width="4"
+            height="17"
+            rx="2"
+            transform="rotate(90 17.5 6.5)"
+            fill="white"
+          />
+        </svg>
+      </button>
+    </div>
+  </article>
+
+  <article class="items__item">
+    <div class="items__sale">-10%</div>
+    <a href="./product.html" class="items__img">
+      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    </a>
+    <a href="" class="items__title">Водка царская 0.7 л</a>
+    <div class="items__price">1200 руб</div>
+    <div class="items__actions">
+      <a href="buy_popup" class="items__buy popup-link"> Купить в 1 клик </a>
+      <button class="items__add add-to-cart" type="button">
+        <svg
+          width="18"
+          height="17"
+          viewBox="0 0 18 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="7" width="4" height="17" rx="2" fill="white" />
+          <rect
+            x="17.5"
+            y="6.5"
+            width="4"
+            height="17"
+            rx="2"
+            transform="rotate(90 17.5 6.5)"
+            fill="white"
+          />
+        </svg>
+      </button>
+    </div>
+  </article>
+
+  <article class="items__item">
+    <div class="items__sale">-10%</div>
+    <a href="./product.html" class="items__img">
+      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    </a>
+    <a href="" class="items__title">Водка царская 0.7 л</a>
+    <div class="items__price">1200 руб</div>
+    <div class="items__actions">
+      <a href="buy_popup" class="items__buy popup-link"> Купить в 1 клик </a>
+      <button class="items__add add-to-cart" type="button">
+        <svg
+          width="18"
+          height="17"
+          viewBox="0 0 18 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="7" width="4" height="17" rx="2" fill="white" />
+          <rect
+            x="17.5"
+            y="6.5"
+            width="4"
+            height="17"
+            rx="2"
+            transform="rotate(90 17.5 6.5)"
+            fill="white"
+          />
+        </svg>
+      </button>
+    </div>
+  </article>
+
+  <article class="items__item">
+    <div class="items__sale">-10%</div>
+    <a href="./product.html" class="items__img">
+      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    </a>
+    <a href="" class="items__title">Водка царская 0.7 л</a>
+    <div class="items__price">1200 руб</div>
+    <div class="items__actions">
+      <a href="buy_popup" class="items__buy popup-link"> Купить в 1 клик </a>
+      <button class="items__add add-to-cart" type="button">
+        <svg
+          width="18"
+          height="17"
+          viewBox="0 0 18 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="7" width="4" height="17" rx="2" fill="white" />
+          <rect
+            x="17.5"
+            y="6.5"
+            width="4"
+            height="17"
+            rx="2"
+            transform="rotate(90 17.5 6.5)"
+            fill="white"
+          />
+        </svg>
+      </button>
+    </div>
+  </article>
+
+  <article class="items__item">
+    <div class="items__sale">-10%</div>
+    <a href="./product.html" class="items__img">
+      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    </a>
+    <a href="" class="items__title">Водка царская 0.7 л</a>
+    <div class="items__price">1200 руб</div>
+    <div class="items__actions">
+      <a href="buy_popup" class="items__buy popup-link"> Купить в 1 клик </a>
+      <button class="items__add add-to-cart" type="button">
+        <svg
+          width="18"
+          height="17"
+          viewBox="0 0 18 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="7" width="4" height="17" rx="2" fill="white" />
+          <rect
+            x="17.5"
+            y="6.5"
+            width="4"
+            height="17"
+            rx="2"
+            transform="rotate(90 17.5 6.5)"
+            fill="white"
+          />
+        </svg>
+      </button>
+    </div>
+  </article>
+
+  <article class="items__item">
+    <div class="items__sale">-10%</div>
+    <a href="./product.html" class="items__img">
+      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    </a>
+    <a href="" class="items__title">Водка царская 0.7 л</a>
+    <div class="items__price">1200 руб</div>
+    <div class="items__actions">
+      <a href="buy_popup" class="items__buy popup-link"> Купить в 1 клик </a>
+      <button class="items__add add-to-cart" type="button">
+        <svg
+          width="18"
+          height="17"
+          viewBox="0 0 18 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="7" width="4" height="17" rx="2" fill="white" />
+          <rect
+            x="17.5"
+            y="6.5"
+            width="4"
+            height="17"
+            rx="2"
+            transform="rotate(90 17.5 6.5)"
+            fill="white"
+          />
+        </svg>
+      </button>
+    </div>
+  </article>
+
+  <article class="items__item">
+    <div class="items__sale">-10%</div>
+    <a href="./product.html" class="items__img">
+      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    </a>
+    <a href="" class="items__title">Водка царская 0.7 л</a>
+    <div class="items__price">1200 руб</div>
+    <div class="items__actions">
+      <a href="buy_popup" class="items__buy popup-link"> Купить в 1 клик </a>
+      <button class="items__add add-to-cart" type="button">
+        <svg
+          width="18"
+          height="17"
+          viewBox="0 0 18 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="7" width="4" height="17" rx="2" fill="white" />
+          <rect
+            x="17.5"
+            y="6.5"
+            width="4"
+            height="17"
+            rx="2"
+            transform="rotate(90 17.5 6.5)"
+            fill="white"
+          />
+        </svg>
+      </button>
+    </div>
+  </article>
+
+  <article class="items__item">
+    <div class="items__sale">-10%</div>
+    <a href="./product.html" class="items__img">
+      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    </a>
+    <a href="" class="items__title">Водка царская 0.7 л</a>
+    <div class="items__price">1200 руб</div>
+    <div class="items__actions">
+      <a href="buy_popup" class="items__buy popup-link"> Купить в 1 клик </a>
+      <button class="items__add add-to-cart" type="button">
+        <svg
+          width="18"
+          height="17"
+          viewBox="0 0 18 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="7" width="4" height="17" rx="2" fill="white" />
+          <rect
+            x="17.5"
+            y="6.5"
+            width="4"
+            height="17"
+            rx="2"
+            transform="rotate(90 17.5 6.5)"
+            fill="white"
+          />
+        </svg>
+      </button>
+    </div>
+  </article>
+  </article>
+</div>
+<!-- /..items -->
+
+                    <div class="category__pagination">
+                      <a href="" class="pagination prev">
+                        <svg
+                          width="6"
+                          height="11"
+                          viewBox="0 0 6 11"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.99535 5.40126C5.97421 5.18493 5.88563 4.98036 5.74196 4.81573L1.90008 0.394357C1.71934 0.17186 1.45476 0.0313163 1.167 0.00459254C0.879213 -0.0219894 0.592933 0.0675967 0.373321 0.253084C0.15372 0.438424 0.019728 0.703793 0.0020089 0.988287C-0.0157079 1.2729 0.0843429 1.55239 0.279375 1.76297L3.5277 5.5L0.279375 9.23703C0.0844873 9.44763 -0.0155617 9.72711 0.00215739 10.0117C0.0197256 10.2962 0.15372 10.5616 0.37332 10.7469C0.592921 10.9324 0.879358 11.022 1.16716 10.9954C1.45494 10.9687 1.71935 10.8281 1.90008 10.6056L5.74196 6.18427C5.93059 5.96795 6.02201 5.68537 5.9955 5.40136L5.99535 5.40126Z"
+                          />
+                        </svg>
+                      </a>
+                      <a href="" class="pagination current">1</a
+                      ><a href="" class="pagination">2</a
+                      ><a href="" class="pagination">3</a
+                      ><span href="" class="pagination dots">...</span>
+                      <a href="" class="pagination">5</a>
+                      <a href="" class="pagination next">
+                        <svg
+                          width="6"
+                          height="11"
+                          viewBox="0 0 6 11"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.99535 5.40126C5.97421 5.18493 5.88563 4.98036 5.74196 4.81573L1.90008 0.394357C1.71934 0.17186 1.45476 0.0313163 1.167 0.00459254C0.879213 -0.0219894 0.592933 0.0675967 0.373321 0.253084C0.15372 0.438424 0.0197282 0.703793 0.00200887 0.988287C-0.015708 1.2729 0.0843429 1.55239 0.279375 1.76297L3.5277 5.5L0.279375 9.23703C0.0844875 9.44763 -0.0155615 9.72711 0.00215725 10.0117C0.0197253 10.2962 0.15372 10.5616 0.373321 10.7469C0.592921 10.9324 0.879358 11.022 1.16716 10.9954C1.45495 10.9687 1.71935 10.8281 1.90008 10.6056L5.74196 6.18427C5.93059 5.96795 6.02201 5.68537 5.9955 5.40136L5.99535 5.40126Z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </section>
+                <div class="text-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- /.main -->
+
+      <!-- .footer -->
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__body">
+      <div class="footer__main">
+        <nav class="footer__menu">
+          <ul class="footer__list">
+            <li><a href="./category.html">Каталог</a></li>
+            <li><a href="./payment.html">Доставка и оплата</a></li>
+            <li><a href="./contacts.html">Наши контакты</a></li>
+          </ul>
+        </nav>
+        <div class="footer__details">
+          <div class="footer__copyright">Все права защищены.</div>
+          <div class="footer__payments">
+            <picture><source srcset="img/footer/01.webp" type="image/webp"><img src="img/footer/01.png" alt="VISA" /></picture>
+            <picture><source srcset="img/footer/02.webp" type="image/webp"><img src="img/footer/02.png" alt="MASTERCARD" /></picture>
+            <picture><source srcset="img/footer/03.webp" type="image/webp"><img src="img/footer/03.png" alt="МИР" /></picture>
+          </div>
+        </div>
+      </div>
+      <div class="footer__info">
+        <a href="tel:+79998887766" class="footer__phone phone"
+          >+7 (999) 888-77-66</a
+        >
+        <div class="footer__work">Работаем круглосуточно</div>
+        <div class="footer__city">Санкт-Петербург</div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /.footer -->
+
+    </div>
+
+    <!-- #buy_popup -->
+<div class="popup buy-popup" id="buy_popup">
+  <div class="popup__body buy-popup__body">
+    <div class="popup__content buy-popup__content">
+      <a href="tel:+79998887766" class="buy-popup__phone">
+        +7 (999) 888-77-66
+      </a>
+      <p class="buy-popup__text">
+        Для быстрого заказа позвоните по телефону. Вам ответит наш менеджер
+      </p>
+      <button class="buy-popup__close close-popup btn">Понятно</button>
+    </div>
+  </div>
+</div>
+<!-- /#buy_popup -->
+
+<!-- #add_popup -->
+<div class="popup add-popup" id="add_popup">
+  <div class="popup__body add-popup__body">
+    <div class="popup__content add-popup__content">
+      <p class="add-popup__text">Товар успешно добавлен в корзину!</p>
+      <button class="add-popup__close close-popup btn">Продолжить</button>
+    </div>
+  </div>
+</div>
+<!-- /#add_popup -->
+
+<!-- #order_popup -->
+<div class="popup order-popup" id="order_popup">
+  <div class="popup__body order-popup__body">
+    <div class="popup__content order-popup__content">
+      <div class="order-popup__icon">
+        <svg
+          width="105"
+          height="106"
+          viewBox="0 0 105 106"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M57.431 105.253C67.2121 104.334 76.5393 100.687 84.3508 94.7289C92.1623 88.7704 98.1436 80.7384 101.615 71.5474C105.087 62.3563 105.908 52.3762 103.986 42.7415C103.609 40.8885 102.425 39.2996 100.757 38.4085C99.0895 37.5174 97.1107 37.4168 95.3604 38.134L94.983 38.2324C93.6069 38.794 92.4699 39.82 91.7698 41.1309C91.0686 42.4429 90.8478 43.9574 91.1463 45.4147C93.2396 56.0892 90.8226 67.1537 84.4672 75.9831C78.112 84.8113 68.3857 90.6154 57.599 92.0178C46.8112 93.4202 35.925 90.2952 27.5226 83.3852C19.1219 76.4739 13.9564 66.3953 13.2518 55.5401C12.5472 44.685 16.3667 34.0219 23.8039 26.0845C31.2412 18.1471 41.6322 13.6392 52.5102 13.6357C55.1159 13.638 57.7138 13.9023 60.2667 14.4227C61.708 14.6881 63.1961 14.4422 64.4749 13.7272C65.7538 13.0112 66.7421 11.8708 67.2682 10.5026L67.4158 10.1583C68.1387 8.40019 68.0358 6.40981 67.1333 4.73512C66.2308 3.06166 64.6259 1.88004 62.759 1.51634C52.7902 -0.47627 42.4566 0.470856 33.0164 4.24103C23.575 8.0112 15.4317 14.442 9.57748 22.7534C3.72208 31.0647 0.408427 40.8973 0.0365347 51.0559C-0.336353 61.044 2.15155 70.9304 7.20616 79.5528C12.261 88.174 19.673 95.1734 28.5701 99.7272C37.4683 104.28 47.4804 106.197 57.431 105.253L57.431 105.253Z"
+            fill="#633389"
+          />
+          <path
+            d="M95.148 16.9149C95.148 20.5375 92.2107 23.4737 88.5881 23.4737C84.9655 23.4737 82.0293 20.5375 82.0293 16.9149C82.0293 13.2923 84.9655 10.3549 88.5881 10.3549C92.2107 10.3549 95.148 13.2923 95.148 16.9149Z"
+            fill="#633389"
+          />
+          <path
+            d="M64.2684 40.1362L47.591 56.8125L40.7528 49.9744C39.0954 48.3169 36.6784 47.6695 34.4137 48.2757C32.1488 48.8831 30.3794 50.6515 29.7729 52.9165C29.1655 55.1813 29.813 57.5982 31.4716 59.2556L40.2119 67.996C42.1702 69.9509 44.824 71.049 47.5909 71.049C50.3578 71.049 53.0118 69.9509 54.9699 67.996L73.5496 49.4175C75.2082 47.7589 75.8556 45.3431 75.2482 43.0783C74.642 40.8135 72.8724 39.044 70.6075 38.4376C68.3426 37.8302 65.9257 38.4776 64.2683 40.1362H64.2684Z"
+            fill="#633389"
+          />
+        </svg>
+      </div>
+      <div class="order-popup__title">Ваш заказ оформлен!</div>
+      <p class="order-popup__text">
+        В ближайшее время с вами свяжется наш менеджер для уточнения деталей
+        заказа.
+      </p>
+      <button class="order-popup__close btn close-popup">Понятно</button>
+    </div>
+  </div>
+</div>
+<!-- /#order_popup -->
+
+<!-- #cart_popup -->
+<div class="popup cart-popup" id="cart_popup">
+  <div class="popup__body cart-popup__body">
+    <div class="popup__content cart-popup__content">
+      <div class="cart-popup__flex">
+        <div class="cart-popup__title">Ваш заказ</div>
+        <button tyle="button" class="cart-popup__close close-popup">
+          <svg
+            width="19"
+            height="19"
+            viewBox="0 0 19 19"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.7564 9.50019L18.5255 16.2691C19.1582 16.9018 19.1582 17.8929 18.5255 18.5255C17.8928 19.1582 16.9017 19.1582 16.2691 18.5255L9.5 11.7562L2.73093 18.5251C2.09827 19.1578 1.10716 19.1578 0.474496 18.5251C-0.158165 17.8925 -0.158165 16.9014 0.474496 16.2687L7.24357 9.49981L0.474496 2.73087C-0.158165 2.09823 -0.158165 1.10714 0.474496 0.474487C1.10716 -0.158162 2.09827 -0.158162 2.73093 0.474487L9.5 7.24342L16.2687 0.474487C16.9014 -0.158162 17.8925 -0.158162 18.5251 0.474487C19.1578 1.10714 19.1578 2.09823 18.5251 2.73087L11.7564 9.50019Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <form class="cart-popup__form">
+        <div class="cart-popup__items">
+          <div class="cart-popup__item item-cart-popup">
+            <div class="item-cart-popup__img">
+              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
+            </div>
+            <div class="item-cart-popup__content">
+              <div class="item-cart-popup__name">
+                <span>Водка царская 0.7 л </span>
+                <input type="hidden" value="Водка царская 0.7 л " />
+              </div>
+              <div class="item-cart-popup__price">1200 руб.</div>
+            </div>
+            <div class="item-cart-popup__actions">
+              <button class="item-cart-popup__minus" type="button">
+                <svg
+                  width="17"
+                  height="5"
+                  viewBox="0 0 17 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="17"
+                    y="0.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 0.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+              <div class="item-cart-popup__count">
+                <span>100</span>
+                <input type="hidden" value="1" />
+              </div>
+              <button class="item-cart-popup__plus" type="button">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
+                  <rect
+                    x="17"
+                    y="6.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 6.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="cart-popup__item item-cart-popup">
+            <div class="item-cart-popup__img">
+              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
+            </div>
+            <div class="item-cart-popup__content">
+              <div class="item-cart-popup__name">
+                <span>Водка царская 0.7 л </span>
+                <input type="hidden" value="Водка царская 0.7 л " />
+              </div>
+              <div class="item-cart-popup__price">1200 руб.</div>
+            </div>
+            <div class="item-cart-popup__actions">
+              <button class="item-cart-popup__minus" type="button">
+                <svg
+                  width="17"
+                  height="5"
+                  viewBox="0 0 17 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="17"
+                    y="0.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 0.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+              <div class="item-cart-popup__count">
+                <span>100</span>
+                <input type="hidden" value="1" />
+              </div>
+              <button class="item-cart-popup__plus" type="button">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
+                  <rect
+                    x="17"
+                    y="6.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 6.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="cart-popup__item item-cart-popup">
+            <div class="item-cart-popup__img">
+              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
+            </div>
+            <div class="item-cart-popup__content">
+              <div class="item-cart-popup__name">
+                <span>Водка царская 0.7 л </span>
+                <input type="hidden" value="Водка царская 0.7 л " />
+              </div>
+              <div class="item-cart-popup__price">1200 руб.</div>
+            </div>
+            <div class="item-cart-popup__actions">
+              <button class="item-cart-popup__minus" type="button">
+                <svg
+                  width="17"
+                  height="5"
+                  viewBox="0 0 17 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="17"
+                    y="0.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 0.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+              <div class="item-cart-popup__count">
+                <span>100</span>
+                <input type="hidden" value="1" />
+              </div>
+              <button class="item-cart-popup__plus" type="button">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
+                  <rect
+                    x="17"
+                    y="6.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 6.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="cart-popup__item item-cart-popup">
+            <div class="item-cart-popup__img">
+              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
+            </div>
+            <div class="item-cart-popup__content">
+              <div class="item-cart-popup__name">
+                <span>Водка царская 0.7 л </span>
+                <input type="hidden" value="Водка царская 0.7 л " />
+              </div>
+              <div class="item-cart-popup__price">1200 руб.</div>
+            </div>
+            <div class="item-cart-popup__actions">
+              <button class="item-cart-popup__minus" type="button">
+                <svg
+                  width="17"
+                  height="5"
+                  viewBox="0 0 17 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="17"
+                    y="0.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 0.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+              <div class="item-cart-popup__count">
+                <span>100</span>
+                <input type="hidden" value="1" />
+              </div>
+              <button class="item-cart-popup__plus" type="button">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
+                  <rect
+                    x="17"
+                    y="6.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 6.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="cart-popup__item item-cart-popup">
+            <div class="item-cart-popup__img">
+              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
+            </div>
+            <div class="item-cart-popup__content">
+              <div class="item-cart-popup__name">
+                <span>Водка царская 0.7 л </span>
+                <input type="hidden" value="Водка царская 0.7 л " />
+              </div>
+              <div class="item-cart-popup__price">1200 руб.</div>
+            </div>
+            <div class="item-cart-popup__actions">
+              <button class="item-cart-popup__minus" type="button">
+                <svg
+                  width="17"
+                  height="5"
+                  viewBox="0 0 17 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="17"
+                    y="0.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 0.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+              <div class="item-cart-popup__count">
+                <span>100</span>
+                <input type="hidden" value="1" />
+              </div>
+              <button class="item-cart-popup__plus" type="button">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
+                  <rect
+                    x="17"
+                    y="6.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 6.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="cart-popup__item item-cart-popup">
+            <div class="item-cart-popup__img">
+              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
+            </div>
+            <div class="item-cart-popup__content">
+              <div class="item-cart-popup__name">
+                <span>Водка царская 0.7 л </span>
+                <input type="hidden" value="Водка царская 0.7 л " />
+              </div>
+              <div class="item-cart-popup__price">1200 руб.</div>
+            </div>
+            <div class="item-cart-popup__actions">
+              <button class="item-cart-popup__minus" type="button">
+                <svg
+                  width="17"
+                  height="5"
+                  viewBox="0 0 17 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="17"
+                    y="0.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 0.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+              <div class="item-cart-popup__count">
+                <span>100</span>
+                <input type="hidden" value="1" />
+              </div>
+              <button class="item-cart-popup__plus" type="button">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
+                  <rect
+                    x="17"
+                    y="6.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 6.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="cart-popup__item item-cart-popup">
+            <div class="item-cart-popup__img">
+              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
+            </div>
+            <div class="item-cart-popup__content">
+              <div class="item-cart-popup__name">
+                <span>Водка царская 0.7 л </span>
+                <input type="hidden" value="Водка царская 0.7 л " />
+              </div>
+              <div class="item-cart-popup__price">1200 руб.</div>
+            </div>
+            <div class="item-cart-popup__actions">
+              <button class="item-cart-popup__minus" type="button">
+                <svg
+                  width="17"
+                  height="5"
+                  viewBox="0 0 17 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="17"
+                    y="0.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 0.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+              <div class="item-cart-popup__count">
+                <span>100</span>
+                <input type="hidden" value="1" />
+              </div>
+              <button class="item-cart-popup__plus" type="button">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
+                  <rect
+                    x="17"
+                    y="6.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 6.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="cart-popup__item item-cart-popup">
+            <div class="item-cart-popup__img">
+              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
+            </div>
+            <div class="item-cart-popup__content">
+              <div class="item-cart-popup__name">
+                <span>Водка царская 0.7 л </span>
+                <input type="hidden" value="Водка царская 0.7 л " />
+              </div>
+              <div class="item-cart-popup__price">1200 руб.</div>
+            </div>
+            <div class="item-cart-popup__actions">
+              <button class="item-cart-popup__minus" type="button">
+                <svg
+                  width="17"
+                  height="5"
+                  viewBox="0 0 17 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="17"
+                    y="0.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 0.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+              <div class="item-cart-popup__count">
+                <span>100</span>
+                <input type="hidden" value="1" />
+              </div>
+              <button class="item-cart-popup__plus" type="button">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
+                  <rect
+                    x="17"
+                    y="6.5"
+                    width="4"
+                    height="17"
+                    rx="2"
+                    transform="rotate(90 17 6.5)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-popup__actions">
+          <div class="cart-popup__total">
+            <div>ИТОГО:</div>
+            <div class="cart-popup__total-price">6430 руб</div>
+          </div>
+          <!-- ЗАМЕНИТЬ НА КНОПКУ ОТПРАВКИ -->
+          <a href="#order_popup" class="cart-popup__btn popup-link btn">
+            Продолжить
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- /#cart_popup -->
+
+
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20220917200020"></script>
+    <!-- SCRIPTS -->
+    <script src="js/app.js?_v=20220917200020"></script>
+  </body>
+</html>
