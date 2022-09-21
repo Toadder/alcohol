@@ -7,10 +7,10 @@
   <!-- SWIPER -->
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20220917200020"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20220922011728"
   />
   <!-- STYLES -->
-  <link rel="stylesheet" href="css/style.min.css?_v=20220917200020" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20220922011728" />
 </head>
 
   <body>
@@ -20,7 +20,7 @@
   <div class="header__container">
     <div class="header__body">
       <a href="./index.html" class="header__logo">
-        <picture><source srcset="https://dummyimage.com/182x50.gif" data-srcset="img/logo.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/182x50.gif" data-src="img/logo.png" alt="Логотип" /></picture>
+        <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип" /></picture>
       </a>
       <div class="header__main">
         <form class="header__search">
@@ -47,7 +47,7 @@
           >
         </div>
       </div>
-      <a href="#cart_popup" class="header__cart cart-header popup-link">
+      <a href="./cart.html" class="header__cart cart-header">
         <div class="cart-header__decoration">
           <div class="cart-header__title">Корзина</div>
           <svg
@@ -94,129 +94,132 @@
         <div class="content">
           <div class="content__container">
             <div class="content__body">
-             <!-- .sidebar -->
+              <!-- .sidebar -->
 <div class="sidebar" data-da=".header__main,991.98,first">
-  <div class="sidebar__city">
-    <svg
-      width="22"
-      height="22"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="#633389"
-    >
-      <path
-        d="M12,2a8.009,8.009,0,0,0-8,8c0,3.255,2.363,5.958,4.866,8.819,0.792,0.906,1.612,1.843,2.342,2.791a1,1,0,0,0,1.584,0c0.73-.948,1.55-1.885,2.342-2.791C17.637,15.958,20,13.255,20,10A8.009,8.009,0,0,0,12,2Zm0,11a3,3,0,1,1,3-3A3,3,0,0,1,12,13Z"
-      />
-    </svg>
+  <div class="sidebar__inner">
+    <div class="sidebar__city">
+      <svg
+        width="22"
+        height="22"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#633389"
+      >
+        <path
+          d="M12,2a8.009,8.009,0,0,0-8,8c0,3.255,2.363,5.958,4.866,8.819,0.792,0.906,1.612,1.843,2.342,2.791a1,1,0,0,0,1.584,0c0.73-.948,1.55-1.885,2.342-2.791C17.637,15.958,20,13.255,20,10A8.009,8.009,0,0,0,12,2Zm0,11a3,3,0,1,1,3-3A3,3,0,0,1,12,13Z"
+        />
+      </svg>
 
-    <span>Санкт-Петербург</span>
+      <span>Санкт-Петербург</span>
+    </div>
+    <nav class="sidebar__menu">
+      <ul class="sidebar__list">
+        <li><a href="./category.html">Каталог</a></li>
+        <li><a href="./blog.html">Блог</a></li>
+        <li><a href="./payment.html">Доставка и оплата</a></li>
+        <li><a href="./contacts.html">О компании</a></li>
+      </ul>
+    </nav>
+    <nav class="sidebar__categories categories-sidebar">
+      <a href="./category.html" class="categories-sidebar__category">
+        <div class="categories-sidebar__icon">
+          <picture><source srcset="img/sidebar/01.webp" type="image/webp"><img src="img/sidebar/01.png" alt="Все товары" /></picture>
+        </div>
+        <div class="categories-sidebar__name">Все товары</div>
+      </a>
+
+      <a href="./category.html" class="categories-sidebar__category">
+        <div class="categories-sidebar__icon">
+          <picture><source srcset="img/sidebar/02.webp" type="image/webp"><img src="img/sidebar/02.png" alt="Водка" /></picture>
+        </div>
+        <div class="categories-sidebar__name">Водка</div>
+      </a>
+
+      <a href="./category.html" class="categories-sidebar__category">
+        <div class="categories-sidebar__icon">
+          <picture><source srcset="img/sidebar/03.webp" type="image/webp"><img src="img/sidebar/03.png" alt="Пиво" /></picture>
+        </div>
+        <div class="categories-sidebar__name">Пиво</div>
+      </a>
+
+      <a href="./category.html" class="categories-sidebar__category">
+        <div class="categories-sidebar__icon">
+          <picture><source srcset="img/sidebar/04.webp" type="image/webp"><img src="img/sidebar/04.png" alt="Вино" /></picture>
+        </div>
+        <div class="categories-sidebar__name">Вино</div>
+      </a>
+
+      <a href="./category.html" class="categories-sidebar__category">
+        <div class="categories-sidebar__icon">
+          <picture><source srcset="img/sidebar/05.webp" type="image/webp"><img src="img/sidebar/05.png" alt="Шампанское" /></picture>
+        </div>
+        <div class="categories-sidebar__name">Шампанское</div>
+      </a>
+
+      <a href="./category.html" class="categories-sidebar__category">
+        <div class="categories-sidebar__icon">
+          <picture><source srcset="img/sidebar/06.webp" type="image/webp"><img src="img/sidebar/06.png" alt="Виски" /></picture>
+        </div>
+        <div class="categories-sidebar__name">Виски</div>
+      </a>
+
+      <a href="./category.html" class="categories-sidebar__category">
+        <div class="categories-sidebar__icon">
+          <picture><source srcset="img/sidebar/07.webp" type="image/webp"><img src="img/sidebar/07.png" alt="Ром" /></picture>
+        </div>
+        <div class="categories-sidebar__name">Ром</div>
+      </a>
+
+      <a href="./category.html" class="categories-sidebar__category">
+        <div class="categories-sidebar__icon">
+          <picture><source srcset="img/sidebar/08.webp" type="image/webp"><img src="img/sidebar/08.png" alt="Вермут" /></picture>
+        </div>
+        <div class="categories-sidebar__name">Вермут</div>
+      </a>
+
+      <a href="./category.html" class="categories-sidebar__category">
+        <div class="categories-sidebar__icon">
+          <picture><source srcset="img/sidebar/09.webp" type="image/webp"><img src="img/sidebar/09.png" alt="Ликёр" /></picture>
+        </div>
+        <div class="categories-sidebar__name">Ликёр</div>
+      </a>
+
+      <a href="./category.html" class="categories-sidebar__category">
+        <div class="categories-sidebar__icon">
+          <picture><source srcset="img/sidebar/10.webp" type="image/webp"><img src="img/sidebar/10.png" alt="Абсент" /></picture>
+        </div>
+        <div class="categories-sidebar__name">Абсент</div>
+      </a>
+
+      <a href="./category.html" class="categories-sidebar__category">
+        <div class="categories-sidebar__icon">
+          <picture><source srcset="img/sidebar/11.webp" type="image/webp"><img src="img/sidebar/11.png" alt="Джин" /></picture>
+        </div>
+        <div class="categories-sidebar__name">Джин</div>
+      </a>
+
+      <a href="./category.html" class="categories-sidebar__category">
+        <div class="categories-sidebar__icon">
+          <picture><source srcset="img/sidebar/12.webp" type="image/webp"><img src="img/sidebar/12.png" alt="Коньяк" /></picture>
+        </div>
+        <div class="categories-sidebar__name">Коньяк</div>
+      </a>
+
+      <a href="./category.html" class="categories-sidebar__category">
+        <div class="categories-sidebar__icon">
+          <picture><source srcset="img/sidebar/13.webp" type="image/webp"><img src="img/sidebar/13.png" alt="Соки и лимонады" /></picture>
+        </div>
+        <div class="categories-sidebar__name">Соки и лимонады</div>
+      </a>
+
+      <a href="./category.html" class="categories-sidebar__category">
+        <div class="categories-sidebar__icon">
+          <picture><source srcset="img/sidebar/14.webp" type="image/webp"><img src="img/sidebar/14.png" alt="Сигареты" /></picture>
+        </div>
+        <div class="categories-sidebar__name">Сигареты</div>
+      </a>
+    </nav>
   </div>
-  <nav class="sidebar__menu">
-    <ul class="sidebar__list">
-      <li><a href="./category.html">Каталог</a></li>
-      <li><a href="./payment.html">Доставка и оплата</a></li>
-      <li><a href="./contacts.html">О компании</a></li>
-    </ul>
-  </nav>
-  <nav class="sidebar__categories categories-sidebar">
-    <a href="./category.html" class="categories-sidebar__category">
-      <div class="categories-sidebar__icon">
-        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/01.png" alt="Все товары" /></picture>
-      </div>
-      <div class="categories-sidebar__name">Все товары</div>
-    </a>
-
-    <a href="./category.html" class="categories-sidebar__category">
-      <div class="categories-sidebar__icon">
-        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/02.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/02.png" alt="Водка" /></picture>
-      </div>
-      <div class="categories-sidebar__name">Водка</div>
-    </a>
-
-    <a href="./category.html" class="categories-sidebar__category">
-      <div class="categories-sidebar__icon">
-        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/03.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/03.png" alt="Пиво" /></picture>
-      </div>
-      <div class="categories-sidebar__name">Пиво</div>
-    </a>
-
-    <a href="./category.html" class="categories-sidebar__category">
-      <div class="categories-sidebar__icon">
-        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/04.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/04.png" alt="Вино" /></picture>
-      </div>
-      <div class="categories-sidebar__name">Вино</div>
-    </a>
-
-    <a href="./category.html" class="categories-sidebar__category">
-      <div class="categories-sidebar__icon">
-        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/05.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/05.png" alt="Шампанское" /></picture>
-      </div>
-      <div class="categories-sidebar__name">Шампанское</div>
-    </a>
-
-    <a href="./category.html" class="categories-sidebar__category">
-      <div class="categories-sidebar__icon">
-        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/06.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/06.png" alt="Виски" /></picture>
-      </div>
-      <div class="categories-sidebar__name">Виски</div>
-    </a>
-
-    <a href="./category.html" class="categories-sidebar__category">
-      <div class="categories-sidebar__icon">
-        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/07.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/07.png" alt="Ром" /></picture>
-      </div>
-      <div class="categories-sidebar__name">Ром</div>
-    </a>
-
-    <a href="./category.html" class="categories-sidebar__category">
-      <div class="categories-sidebar__icon">
-        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/08.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/08.png" alt="Вермут" /></picture>
-      </div>
-      <div class="categories-sidebar__name">Вермут</div>
-    </a>
-
-    <a href="./category.html" class="categories-sidebar__category">
-      <div class="categories-sidebar__icon">
-        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/09.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/09.png" alt="Ликёр" /></picture>
-      </div>
-      <div class="categories-sidebar__name">Ликёр</div>
-    </a>
-
-    <a href="./category.html" class="categories-sidebar__category">
-      <div class="categories-sidebar__icon">
-        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/10.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/10.png" alt="Абсент" /></picture>
-      </div>
-      <div class="categories-sidebar__name">Абсент</div>
-    </a>
-
-    <a href="./category.html" class="categories-sidebar__category">
-      <div class="categories-sidebar__icon">
-        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/11.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/11.png" alt="Джин" /></picture>
-      </div>
-      <div class="categories-sidebar__name">Джин</div>
-    </a>
-
-    <a href="./category.html" class="categories-sidebar__category">
-      <div class="categories-sidebar__icon">
-        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/12.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/12.png" alt="Коньяк" /></picture>
-      </div>
-      <div class="categories-sidebar__name">Коньяк</div>
-    </a>
-
-    <a href="./category.html" class="categories-sidebar__category">
-      <div class="categories-sidebar__icon">
-        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/13.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/13.png" alt="Соки и лимонады" /></picture>
-      </div>
-      <div class="categories-sidebar__name">Соки и лимонады</div>
-    </a>
-
-    <a href="./category.html" class="categories-sidebar__category">
-      <div class="categories-sidebar__icon">
-        <picture><source srcset="https://dummyimage.com/37x37.gif" data-srcset="img/sidebar/14.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/37x37.gif" data-src="img/sidebar/14.png" alt="Сигареты" /></picture>
-      </div>
-      <div class="categories-sidebar__name">Сигареты</div>
-    </a>
-  </nav>
 </div>
 <!-- /.sidebar -->
 
@@ -239,17 +242,10 @@
                     </a>
                     <div class="product__flex">
                       <div class="product__img">
-                        <picture
-                          ><source
-                            srcset="https://dummyimage.com/359x538.gif"
-                            data-srcset="img/product/01.webp"
-                            type="image/webp" />
-                          <img
-                            src="https://dummyimage.com/359x538.gif"
-                            class="lazy-image"
-                            data-src="img/product/01.png"
-                            alt="Логотип"
-                        /></picture>
+                        <img
+                          src="img/product/01.png"
+                          alt="Coleccion Michel Torino Sauvignon Blanc, 2019"
+                        />
                       </div>
                       <div class="product__content">
                         <h1 class="product__title">
@@ -333,8 +329,8 @@
 <div class="items">
   <article class="items__item">
     <div class="items__sale">-10%</div>
-    <a href="./product.html" class="items__img">
-      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    <a href="" class="items__img">
+      <picture><source srcset="img/items/01.webp" type="image/webp"><img src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
     </a>
     <a href="" class="items__title">Водка царская 0.7 л</a>
     <div class="items__price">1200 руб</div>
@@ -365,8 +361,8 @@
 
   <article class="items__item">
     <div class="items__sale">-10%</div>
-    <a href="./product.html" class="items__img">
-      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    <a href="" class="items__img">
+      <picture><source srcset="img/items/01.webp" type="image/webp"><img src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
     </a>
     <a href="" class="items__title">Водка царская 0.7 л</a>
     <div class="items__price">1200 руб</div>
@@ -397,8 +393,8 @@
 
   <article class="items__item">
     <div class="items__sale">-10%</div>
-    <a href="./product.html" class="items__img">
-      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    <a href="" class="items__img">
+      <picture><source srcset="img/items/01.webp" type="image/webp"><img src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
     </a>
     <a href="" class="items__title">Водка царская 0.7 л</a>
     <div class="items__price">1200 руб</div>
@@ -429,8 +425,8 @@
 
   <article class="items__item">
     <div class="items__sale">-10%</div>
-    <a href="./product.html" class="items__img">
-      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    <a href="" class="items__img">
+      <picture><source srcset="img/items/01.webp" type="image/webp"><img src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
     </a>
     <a href="" class="items__title">Водка царская 0.7 л</a>
     <div class="items__price">1200 руб</div>
@@ -461,8 +457,8 @@
 
   <article class="items__item">
     <div class="items__sale">-10%</div>
-    <a href="./product.html" class="items__img">
-      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    <a href="" class="items__img">
+      <picture><source srcset="img/items/01.webp" type="image/webp"><img src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
     </a>
     <a href="" class="items__title">Водка царская 0.7 л</a>
     <div class="items__price">1200 руб</div>
@@ -493,8 +489,8 @@
 
   <article class="items__item">
     <div class="items__sale">-10%</div>
-    <a href="./product.html" class="items__img">
-      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    <a href="" class="items__img">
+      <picture><source srcset="img/items/01.webp" type="image/webp"><img src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
     </a>
     <a href="" class="items__title">Водка царская 0.7 л</a>
     <div class="items__price">1200 руб</div>
@@ -525,8 +521,8 @@
 
   <article class="items__item">
     <div class="items__sale">-10%</div>
-    <a href="./product.html" class="items__img">
-      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    <a href="" class="items__img">
+      <picture><source srcset="img/items/01.webp" type="image/webp"><img src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
     </a>
     <a href="" class="items__title">Водка царская 0.7 л</a>
     <div class="items__price">1200 руб</div>
@@ -557,8 +553,8 @@
 
   <article class="items__item">
     <div class="items__sale">-10%</div>
-    <a href="./product.html" class="items__img">
-      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    <a href="" class="items__img">
+      <picture><source srcset="img/items/01.webp" type="image/webp"><img src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
     </a>
     <a href="" class="items__title">Водка царская 0.7 л</a>
     <div class="items__price">1200 руб</div>
@@ -589,8 +585,8 @@
 
   <article class="items__item">
     <div class="items__sale">-10%</div>
-    <a href="./product.html" class="items__img">
-      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    <a href="" class="items__img">
+      <picture><source srcset="img/items/01.webp" type="image/webp"><img src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
     </a>
     <a href="" class="items__title">Водка царская 0.7 л</a>
     <div class="items__price">1200 руб</div>
@@ -621,8 +617,8 @@
 
   <article class="items__item">
     <div class="items__sale">-10%</div>
-    <a href="./product.html" class="items__img">
-      <picture><source srcset="https://dummyimage.com/57x167.gif" data-srcset="img/items/01.webp" type="image/webp"><img class="lazy-image" src="https://dummyimage.com/57x167.gif" data-src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
+    <a href="" class="items__img">
+      <picture><source srcset="img/items/01.webp" type="image/webp"><img src="img/items/01.png" alt="Водка царская 0.7 л " /></picture>
     </a>
     <a href="" class="items__title">Водка царская 0.7 л</a>
     <div class="items__price">1200 руб</div>
@@ -671,6 +667,7 @@
         <nav class="footer__menu">
           <ul class="footer__list">
             <li><a href="./category.html">Каталог</a></li>
+            <li><a href="./blog.html">Блог</a></li>
             <li><a href="./payment.html">Доставка и оплата</a></li>
             <li><a href="./contacts.html">Наши контакты</a></li>
           </ul>
@@ -762,513 +759,10 @@
 </div>
 <!-- /#order_popup -->
 
-<!-- #cart_popup -->
-<div class="popup cart-popup" id="cart_popup">
-  <div class="popup__body cart-popup__body">
-    <div class="popup__content cart-popup__content">
-      <div class="cart-popup__flex">
-        <div class="cart-popup__title">Ваш заказ</div>
-        <button tyle="button" class="cart-popup__close close-popup">
-          <svg
-            width="19"
-            height="19"
-            viewBox="0 0 19 19"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M11.7564 9.50019L18.5255 16.2691C19.1582 16.9018 19.1582 17.8929 18.5255 18.5255C17.8928 19.1582 16.9017 19.1582 16.2691 18.5255L9.5 11.7562L2.73093 18.5251C2.09827 19.1578 1.10716 19.1578 0.474496 18.5251C-0.158165 17.8925 -0.158165 16.9014 0.474496 16.2687L7.24357 9.49981L0.474496 2.73087C-0.158165 2.09823 -0.158165 1.10714 0.474496 0.474487C1.10716 -0.158162 2.09827 -0.158162 2.73093 0.474487L9.5 7.24342L16.2687 0.474487C16.9014 -0.158162 17.8925 -0.158162 18.5251 0.474487C19.1578 1.10714 19.1578 2.09823 18.5251 2.73087L11.7564 9.50019Z"
-            />
-          </svg>
-        </button>
-      </div>
-      <form class="cart-popup__form">
-        <div class="cart-popup__items">
-          <div class="cart-popup__item item-cart-popup">
-            <div class="item-cart-popup__img">
-              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
-            </div>
-            <div class="item-cart-popup__content">
-              <div class="item-cart-popup__name">
-                <span>Водка царская 0.7 л </span>
-                <input type="hidden" value="Водка царская 0.7 л " />
-              </div>
-              <div class="item-cart-popup__price">1200 руб.</div>
-            </div>
-            <div class="item-cart-popup__actions">
-              <button class="item-cart-popup__minus" type="button">
-                <svg
-                  width="17"
-                  height="5"
-                  viewBox="0 0 17 5"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="17"
-                    y="0.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 0.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-              <div class="item-cart-popup__count">
-                <span>100</span>
-                <input type="hidden" value="1" />
-              </div>
-              <button class="item-cart-popup__plus" type="button">
-                <svg
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
-                  <rect
-                    x="17"
-                    y="6.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 6.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="cart-popup__item item-cart-popup">
-            <div class="item-cart-popup__img">
-              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
-            </div>
-            <div class="item-cart-popup__content">
-              <div class="item-cart-popup__name">
-                <span>Водка царская 0.7 л </span>
-                <input type="hidden" value="Водка царская 0.7 л " />
-              </div>
-              <div class="item-cart-popup__price">1200 руб.</div>
-            </div>
-            <div class="item-cart-popup__actions">
-              <button class="item-cart-popup__minus" type="button">
-                <svg
-                  width="17"
-                  height="5"
-                  viewBox="0 0 17 5"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="17"
-                    y="0.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 0.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-              <div class="item-cart-popup__count">
-                <span>100</span>
-                <input type="hidden" value="1" />
-              </div>
-              <button class="item-cart-popup__plus" type="button">
-                <svg
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
-                  <rect
-                    x="17"
-                    y="6.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 6.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="cart-popup__item item-cart-popup">
-            <div class="item-cart-popup__img">
-              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
-            </div>
-            <div class="item-cart-popup__content">
-              <div class="item-cart-popup__name">
-                <span>Водка царская 0.7 л </span>
-                <input type="hidden" value="Водка царская 0.7 л " />
-              </div>
-              <div class="item-cart-popup__price">1200 руб.</div>
-            </div>
-            <div class="item-cart-popup__actions">
-              <button class="item-cart-popup__minus" type="button">
-                <svg
-                  width="17"
-                  height="5"
-                  viewBox="0 0 17 5"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="17"
-                    y="0.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 0.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-              <div class="item-cart-popup__count">
-                <span>100</span>
-                <input type="hidden" value="1" />
-              </div>
-              <button class="item-cart-popup__plus" type="button">
-                <svg
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
-                  <rect
-                    x="17"
-                    y="6.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 6.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="cart-popup__item item-cart-popup">
-            <div class="item-cart-popup__img">
-              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
-            </div>
-            <div class="item-cart-popup__content">
-              <div class="item-cart-popup__name">
-                <span>Водка царская 0.7 л </span>
-                <input type="hidden" value="Водка царская 0.7 л " />
-              </div>
-              <div class="item-cart-popup__price">1200 руб.</div>
-            </div>
-            <div class="item-cart-popup__actions">
-              <button class="item-cart-popup__minus" type="button">
-                <svg
-                  width="17"
-                  height="5"
-                  viewBox="0 0 17 5"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="17"
-                    y="0.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 0.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-              <div class="item-cart-popup__count">
-                <span>100</span>
-                <input type="hidden" value="1" />
-              </div>
-              <button class="item-cart-popup__plus" type="button">
-                <svg
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
-                  <rect
-                    x="17"
-                    y="6.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 6.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="cart-popup__item item-cart-popup">
-            <div class="item-cart-popup__img">
-              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
-            </div>
-            <div class="item-cart-popup__content">
-              <div class="item-cart-popup__name">
-                <span>Водка царская 0.7 л </span>
-                <input type="hidden" value="Водка царская 0.7 л " />
-              </div>
-              <div class="item-cart-popup__price">1200 руб.</div>
-            </div>
-            <div class="item-cart-popup__actions">
-              <button class="item-cart-popup__minus" type="button">
-                <svg
-                  width="17"
-                  height="5"
-                  viewBox="0 0 17 5"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="17"
-                    y="0.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 0.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-              <div class="item-cart-popup__count">
-                <span>100</span>
-                <input type="hidden" value="1" />
-              </div>
-              <button class="item-cart-popup__plus" type="button">
-                <svg
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
-                  <rect
-                    x="17"
-                    y="6.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 6.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="cart-popup__item item-cart-popup">
-            <div class="item-cart-popup__img">
-              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
-            </div>
-            <div class="item-cart-popup__content">
-              <div class="item-cart-popup__name">
-                <span>Водка царская 0.7 л </span>
-                <input type="hidden" value="Водка царская 0.7 л " />
-              </div>
-              <div class="item-cart-popup__price">1200 руб.</div>
-            </div>
-            <div class="item-cart-popup__actions">
-              <button class="item-cart-popup__minus" type="button">
-                <svg
-                  width="17"
-                  height="5"
-                  viewBox="0 0 17 5"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="17"
-                    y="0.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 0.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-              <div class="item-cart-popup__count">
-                <span>100</span>
-                <input type="hidden" value="1" />
-              </div>
-              <button class="item-cart-popup__plus" type="button">
-                <svg
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
-                  <rect
-                    x="17"
-                    y="6.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 6.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="cart-popup__item item-cart-popup">
-            <div class="item-cart-popup__img">
-              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
-            </div>
-            <div class="item-cart-popup__content">
-              <div class="item-cart-popup__name">
-                <span>Водка царская 0.7 л </span>
-                <input type="hidden" value="Водка царская 0.7 л " />
-              </div>
-              <div class="item-cart-popup__price">1200 руб.</div>
-            </div>
-            <div class="item-cart-popup__actions">
-              <button class="item-cart-popup__minus" type="button">
-                <svg
-                  width="17"
-                  height="5"
-                  viewBox="0 0 17 5"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="17"
-                    y="0.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 0.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-              <div class="item-cart-popup__count">
-                <span>100</span>
-                <input type="hidden" value="1" />
-              </div>
-              <button class="item-cart-popup__plus" type="button">
-                <svg
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
-                  <rect
-                    x="17"
-                    y="6.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 6.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="cart-popup__item item-cart-popup">
-            <div class="item-cart-popup__img">
-              <picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="" /></picture>
-            </div>
-            <div class="item-cart-popup__content">
-              <div class="item-cart-popup__name">
-                <span>Водка царская 0.7 л </span>
-                <input type="hidden" value="Водка царская 0.7 л " />
-              </div>
-              <div class="item-cart-popup__price">1200 руб.</div>
-            </div>
-            <div class="item-cart-popup__actions">
-              <button class="item-cart-popup__minus" type="button">
-                <svg
-                  width="17"
-                  height="5"
-                  viewBox="0 0 17 5"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="17"
-                    y="0.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 0.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-              <div class="item-cart-popup__count">
-                <span>100</span>
-                <input type="hidden" value="1" />
-              </div>
-              <button class="item-cart-popup__plus" type="button">
-                <svg
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x="6.5" width="4" height="17" rx="2" fill="white" />
-                  <rect
-                    x="17"
-                    y="6.5"
-                    width="4"
-                    height="17"
-                    rx="2"
-                    transform="rotate(90 17 6.5)"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="cart-popup__actions">
-          <div class="cart-popup__total">
-            <div>ИТОГО:</div>
-            <div class="cart-popup__total-price">6430 руб</div>
-          </div>
-          <!-- ЗАМЕНИТЬ НА КНОПКУ ОТПРАВКИ -->
-          <a href="#order_popup" class="cart-popup__btn popup-link btn">
-            Продолжить
-          </a>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-<!-- /#cart_popup -->
-
 
     <!-- SWIPER -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20220917200020"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20220922011728"></script>
     <!-- SCRIPTS -->
-    <script src="js/app.js?_v=20220917200020"></script>
+    <script src="js/app.min.js?_v=20220922011728"></script>
   </body>
 </html>
